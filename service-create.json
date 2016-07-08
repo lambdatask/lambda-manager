@@ -1,0 +1,30 @@
+{
+  "Name": "group-userapp",
+  "TaskTemplate": {
+    "ContainerSpec": {
+      "Image": "group-userapp:0.0.1"
+    },
+    "Resources": {
+      "Limits": {},
+      "Reservations": {}
+    },
+    "RestartPolicy": {},
+    "Placement": {}
+  },
+  "Mode": {
+    "Replicated": {
+      "Replicas": 1
+    }
+  },
+  "UpdateConfig": {
+    "Parallelism": 1
+  },
+  "EndpointSpec": {
+    "ExposedPorts": [
+      {
+        "Protocol": "tcp",
+        "Port": 8888
+      }
+    ]
+  }
+}
