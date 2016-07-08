@@ -1,0 +1,23 @@
+{
+  "Name": "group-userapp",
+  "TaskTemplate": {
+    "ContainerSpec": {
+      "Image": "group-userapp:0.0.1"
+    },
+    "Resources": {
+      "Limits": {},
+      "Reservations": {}
+    },
+    "RestartPolicy": {},
+    "Placement": {}
+  },
+  "Mode": {
+    "Replicated": {
+      "Replicas": 2
+    }
+  },
+  "UpdateConfig": {
+    "Parallelism": 1
+  },
+  "EndpointSpec": {}
+}
