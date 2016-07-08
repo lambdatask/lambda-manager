@@ -20,11 +20,11 @@
     "Parallelism": 1
   },
   "EndpointSpec": {
-    "ExposedPorts": [
+    "Ports": [
       {
         "Protocol": "tcp",
-        "Port": 8888
-      }
+        "TargetPort": 8888
+      } 
     ]
   }
 }
